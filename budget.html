@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Budget Dashboard</title>
+
+    <link rel="stylesheet" href="BUDGETCSS.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+    <h1>💰 Budget Dashboard</h1>
+
+
+    <!-- Summary Cards -->
+
+    <div class="cards">
+
+        <div class="card income">
+            <h3>Total Income</h3>
+            <p id="incomeTotal">$0</p>
+        </div>
+
+
+        <div class="card expense">
+            <h3>Total Expenses</h3>
+            <p id="expenseTotal">$0</p>
+        </div>
+
+
+        <div class="card balance">
+            <h3>Remaining Balance</h3>
+            <p id="balance">$0</p>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Input Section -->
+
+
+    <div class="input-section">
+
+
+        <div>
+
+            <h2>Add Income</h2>
+
+            <input 
+                id="incomeName"
+                placeholder="Income source"
+            >
+
+            <input 
+                id="incomeAmount"
+                type="number"
+                placeholder="Amount"
+            >
+
+            <button onclick="addIncome()">
+                Add Income
+            </button>
+
+
+        </div>
+
+
+
+
+        <div>
+
+            <h2>Add Expense</h2>
+
+            <input 
+                id="expenseName"
+                placeholder="Expense name"
+            >
+
+
+            <input 
+                id="expenseAmount"
+                type="number"
+                placeholder="Amount"
+            >
+
+
+            <button onclick="addExpense()">
+                Add Expense
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Transactions -->
+
+
+    <div class="transactions">
+
+        <h2>Transactions</h2>
+
+        <ul id="transactionList"></ul>
+
+    </div>
+
+
+
+
+
+    <!-- Charts -->
+
+
+    <div class="charts">
+
+
+        <div class="chart-box">
+
+            <h2>Expense Breakdown</h2>
+
+            <canvas id="expenseChart"></canvas>
+
+        </div>
+
+
+
+        <div class="chart-box">
+
+            <h2>Cash Flow</h2>
+
+            <canvas id="cashFlowChart"></canvas>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script src="JSbudg.js"></script>
+
+
+</body>
+
+</html>
