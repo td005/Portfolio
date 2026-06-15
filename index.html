@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TD-ReactResumeBuild</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+nav{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#0f172a;
+    border-bottom:3px solid #38bdf8;
+    display:inline-block;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#0284c7;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#1e293b;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Tom Dandrea</h1>
+    <p>Financial Analyst   |   Resume/Portfolio</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#websites">Web Projects</a>
+    <a href="#excel">Excel Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            Replace this text with a short professional summary.
+            Highlight your technical skills, experience, and career goals.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Excel (Advanced Formulas)</div>
+            <div class="skill">Power Query</div>
+            <div class="skill">Financial Modeling</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Data Analytics</div>
+            <div class="skill">Client Relations</div>
+            <div class="skill">Team Projects</div>
+            <div class="skill">Some Programming(VBA/Python/JS)</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="card">
+            <h3>Financial Operations Analyst ll</h3>
+            <p><strong>Pathward</strong></p>
+            <p>May 2025 - Present</p>
+            <p>
+                - Technical documentation for new processes and simplify exisisting process procedures<br>
+                - Responsible for assigned projects, including program winddowns or new technology initiatives <br>
+                - Train and assist team with account research and partner communication 
+            </p>
+        </div>
+        <br>
+        <div class="card">
+            <h3>Financial Operations Analyst</h3>
+            <p><strong>Pathward</strong></p>
+            <p>Jan 2023 - May 2025</p>
+            <p>
+                - Identify and resolve reconciliation escalations for mulitple partners <br>
+                - Create Ad Hoc Reports and research tools to be used across our team <br>
+                - Transaction analysis and variance tracking for 800+ accounts<br>
+            </p>
+        </div>
+        <br>
+        <div class="card">
+            <h3>Lease Analyst</h3>
+            <p><strong>Jones Lang LaSalle (JLL)</strong></p>
+            <p>Jan 2022 - May 2022  (Contract)</p>
+            <p>
+               - Apply payments and track total variance for client portfolio of 100+ commerical properties across NA.<br>
+               - Create budgets and forecasting <br>
+               - Provide guidance to clients for operating expense and general lease contracts
+            </p>
+        </div>
+        <br>
+        <div class="card">
+            <h3>Accounts Payable Technician</h3>
+            <p><strong>Westmoreland County Community College</strong></p>
+            <p>Aug 2021 - Dec 2021  (Contract)</p>
+            <p>
+              - Full cycle accounts payable and vendor realationship management.<br> 
+              - Create workflow improvements and migrate data to new platform.
+            </p>
+        </div>
+    </section>
+
+    <section id="websites">
+        <h2 class="section-title">Web Portfolio</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>Business Website</h3>
+                <p>Responsive website built with HTML, CSS, and JavaScript.</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+
+            <div class="card">
+                <h3>E-Commerce Store</h3>
+                <p>Online store with shopping cart and product catalog.</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+
+            <div class="card">
+                <h3>Dashboard Application</h3>
+                <p>Interactive dashboard with charts and reports.</p>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="excel">
+        <h2 class="section-title">Excel Portfolio</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>Sales Dashboard</h3>
+                <p>
+                    Excel dashboard with Pivot Tables, slicers, KPIs,
+                    and executive reporting.
+                </p>
+                <a href="files/sales-dashboard.xlsx" class="btn">
+                    Download
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Budget Tracker</h3>
+                <p>
+                    Automated budgeting workbook with formulas and charts.
+                </p>
+                <a href="files/budget-tracker.xlsx" class="btn">
+                    Download
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Inventory Management Tool</h3>
+                <p>
+                    Excel solution using Power Query and VBA automation.
+                </p>
+                <a href="files/inventory-tool.xlsx" class="btn">
+                    Download
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <p>Email: tdandrea25@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Your Name. All Rights Reserved.</p>
+</footer>
+
+<script>
+console.log("Portfolio Website Loaded");
+</script>
+
+</body>
+</html>
